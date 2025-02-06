@@ -1,0 +1,20 @@
+int button_pin =2;
+int LED=7;
+
+void setup()
+{ 
+  pinMode(button_pin,INPUT);
+  pinMode(LED,OUTPUT);
+}
+
+void loop()
+{
+  if(digitalRead(button_pin)==LOW)
+  {
+    digitalWrite(LED,HIGH);
+    delay(3000);
+    digitalWrite(LED, LOW);
+
+  }
+
+}
